@@ -1,0 +1,42 @@
+# Python / virtualenv
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# Datasets (large binary archives and extracted files)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+facades.tar.gz
+facades/
+
+# Checkpoints / logs / generated artifacts
+checkpoints/*.pth
+checkpoints/*.pt
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.gif
+!outputs/.gitkeep
+*.log
+
+# System / IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# GitHub-safe generated artifacts
+.pytest_cache/
+smoke_checkpoints/
+*.pth
+*.pt
+checkpoints/*
+!checkpoints/.gitkeep
+outputs/*
+!outputs/.gitkeep
